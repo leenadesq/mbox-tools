@@ -1,0 +1,36 @@
+From alice@example.com Mon Jan  1 10:00:00 2024
+From: alice@example.com
+To: bob@example.com
+Date: Mon, 1 Jan 2024 10:00:00 +0000
+Subject: Hello
+Message-ID: <a@example.com>
+
+Hi Bob, first message.
+
+From alice@example.com Tue Feb  1 10:00:00 2024
+From: alice@example.com
+To: bob@example.com
+Date: Tue, 1 Feb 2024 10:00:00 +0000
+Subject: Followup
+Message-ID: <b@example.com>
+
+Followup message.
+
+From alice@example.com Tue Feb  1 10:00:00 2024
+From: alice@example.com
+To: bob@example.com
+Date: Tue, 1 Feb 2024 10:00:00 +0000
+Subject: Followup (duplicate)
+Message-ID: <b@example.com>
+
+Duplicate of previous.
+
+From carol@example.com Wed Mar 15 14:12:00 2024
+From: carol@example.com
+To: bob@example.com
+Date: Wed, 15 Mar 2024 14:12:00 +0000
+Subject: Unrelated
+Message-ID: <c@example.com>
+
+Unrelated message from carol.
+
