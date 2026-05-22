@@ -8,9 +8,9 @@ Small Python CLI utilities for working with **mbox** mail archives. Built for fo
 
 ## What it does
 
-- `mbox-tools stats <file>` â count messages, date range, top senders, total size.
-- `mbox-tools dedupe <in> <out>` â write a new mbox with duplicate Message-IDs removed.
-- `mbox-tools split <file> --from YYYY-MM-DD --to YYYY-MM-DD` â extract a date range into a new mbox.
+- `mbox-tools stats <file>` - count messages, date range, top senders, total size.
+- `mbox-tools dedupe <in> <out>` - write a new mbox with duplicate Message-IDs removed.
+- `mbox-tools split <file> --from YYYY-MM-DD --to YYYY-MM-DD` - extract a date range into a new mbox.
 
 All operations are read-only on the input file. Output is written to a new file you specify.
 
@@ -30,6 +30,12 @@ mbox-tools dedupe input.mbox deduped.mbox
 mbox-tools split input.mbox --from 2024-01-01 --to 2024-06-30 -o q1q2.mbox
 ```
 
+## Documentation
+
+- [Gmail Takeout workflow](docs/gmail-takeout.md) - end-to-end inspection, dedupe, and split.
+
+More walkthroughs will land under `docs/` as the issues in this repo get picked up.
+
 ## Status
 
 Early. The current focus is correctness on the three commands above and a small pytest suite that runs in CI. See `tests/` for fixtures.
@@ -38,9 +44,17 @@ Early. The current focus is correctness on the three commands above and a small 
 
 This project intentionally does not touch:
 
-- PST / OST / OLM formats â use libpff or specialised tools.
+- PST / OST / OLM formats - use libpff or specialised tools.
 - Mail body rendering, attachment extraction, or HTML sanitisation.
 - Anything that mutates the source file.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). Open an issue before starting any non-trivial change.
+
+## Security
+
+See [SECURITY.md](SECURITY.md) for private disclosure instructions.
 
 ## License
 
